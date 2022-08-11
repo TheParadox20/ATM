@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+</head>
+<body>
+    <h1>Account</h1>
+    <h3 id="username"></h3>
+    <h4 id="balance">Balance: </h4>
+    <input type="text" name="" id="deposit">
+    <button onclick="deposit()">Deposit</button>
+    <input type="text" name="" id="withdraw">
+    <button onclick="withdraw()">Withdraw</button>
+    <button onclick="logout()">Log Out</button>
+
+    <h2>Login History</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>Log In</td>
+                <td>Log Out</td>
+            </tr>
+        </thead>
+        <tbody id="loginTable"></tbody>
+    </table>
+
+    <h2>Transaction History</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>Deposit</td>
+                <td>Withdrawal</td>
+                <td>Time</td>
+            </tr>
+        </thead>
+        <tbody id="transactionTable"></tbody>
+    </table>
+    <script src="scripts/atm.js"></script>
+</body>
+</html>
